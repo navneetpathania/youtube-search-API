@@ -121,3 +121,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 YOUTUBE_DATA_API_KEY = os.environ.get('YOUTUBE_DATA_API_KEY')
+django_heroku.settings(locals())
