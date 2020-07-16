@@ -18,12 +18,13 @@ def index(request):
 		}
 		viedo_id = []
 		r = requests.get(search_url,params=search_parms)
+		
 		results = r.json()['items']
 		for result in results:
 			viedo_id.append(result['id']['videoId'])
 
 		if request.POST['submit'] == 'lucky':
-			return redirect(f'https://www.youtube.com/watch?v={viedo_id[0]}')
+			return redirect(f'https://www.youtube.com/watch?v={video_id[0]}')
 		
 
 		viedo_params = {
