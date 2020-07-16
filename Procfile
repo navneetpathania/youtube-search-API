@@ -1,1 +1,1 @@
-web: gunicorn blogpost.wsgi
+web: gunicorn youtube_search.wsgi
